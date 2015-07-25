@@ -144,6 +144,9 @@
 # Reassigning the new descriptive column names to the finalData set
         colnames(finalData_merge) <- final_data_colNames;
 
+# Export the finalData_merge set 
+        write.table(finalData_merge, './analysis_folder/finalData.txt',row.names=TRUE,sep='\t');
+
         print("Task 4 complete")
 ##################################################################################
 # TASK 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
@@ -154,10 +157,10 @@
 # Summarizing the finalData_NoActivityType table to include just the mean of each variable for each activity and each subject
         tidyData  <- aggregate(finalData_NoActivityType[,names(finalData_NoActivityType) != c('actId','subjectId')],by=list(actId=finalData_NoActivityType$actId,subjectId = finalData_NoActivityType$subjectId),mean);
 
-# Merging the tidyData with activityType to include descriptive acitvity names
+# Merging the tidyData with activity_labels to include descriptive acitvity names
         tidyData    <- merge(tidyData,activity_labels,by='actId',all.x=TRUE);
 
 # Export the tidyData set 
-write.table(tidyData, './analysis_folder/tidyData.txt',row.names=TRUE,sep='\t');
+        write.table(tidyData, './analysis_folder/tidyData.txt',row.names=TRUE,sep='\t');
 
         print("Task 5 complete")
