@@ -16,6 +16,7 @@ Their data was obtained from carrying out experiments with 30 participants perfo
 
 ---
 |File Name|Description|
+|:---:|:---:|
 |subject_test.txt | Contains the participant number (1-30) for the test data|
 |y_test.txt | contains the activity number (1-6) for the test data|
 |x_test.txt | contains the vector information (1-531) for the test data|
