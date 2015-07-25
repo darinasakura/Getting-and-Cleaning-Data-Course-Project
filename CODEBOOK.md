@@ -56,14 +56,16 @@ participant - the participant number (1-30)
 activity - the activity description
 The vector information contains 81 rows that are compromised of many elements for each measurement. For example "tBodyAcc-mean-X" denotes a measurement of the mean of a person's acceleration along the x axis as calculated using time. Below are the list of parameters that appear in the tidy data set:
 
-t prefix - measurement was calculated using the time domain
-f prefix- measurement was calculated using the frequency domain
-Body - the person's own movement
-Gravity - movement due to gravity
-Acc - acceleration - m/s^2
-Jerk - jerk - m/s^3
-Gyro - angular velocity - radians/s
-Mag - magnitude using the Euclidean norm
-std - standard deviation
-mean - average
-x, y, z - which axis the measurement corresponds to
+|Perameter|Description|
+|:---:|:---:|
+|t prefix | measurement was calculated using the time domain|
+|f prefix | measurement was calculated using the frequency domain|
+|Body | the person's own movement|
+|Gravity | movement due to gravity|
+|Acc | acceleration - m/s^2|
+|Jerk | jerk - m/s^3|
+|Gyro | angular velocity - radians/s|
+|Mag | magnitude using the Euclidean norm|
+|std | standard deviation|
+|mean | average|
+|x, y, z | which axis the measurement corresponds to|
