@@ -28,7 +28,7 @@ Their data was obtained from carrying out experiments with 30 participants perfo
 
 For more detailed information on the original data set consult the README.txt file included in the original project.
 
-Transformations
+##Transformations
 
 The data and labels were loaded into R. The identifier column names were given more appropriate labels such as "activity" and "participant". The vector measurement column names were renamed according to the features text file. These names were cleaned up by removed unneccessary brackets. I found that the resultant names descriptive yet readable and succint due to the dashes and camel case and decided to not alter them any further. Some examples include:
 
@@ -48,7 +48,7 @@ Then an independent tidy data frame was created using the aggretate function wit
 
 The tidy data frame was written to a file called "activitydata.txt" in the working directory.
 
-Data Dictionary
+##Data Dictionary
 
 The identifiers are as follows:
 
