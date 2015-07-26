@@ -41,12 +41,14 @@ The next step was to merge the test and training data sets into a single data fr
 
 The numeric labels for activities was used to convert to descriptive ones using the map values function and activity_labels text file. They produced the following labels.
 
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+|activity_label labels|
+|---|
+|WALKING|
+|WALKING_UPSTAIRS|
+|WALKING_DOWNSTAIRS|
+|SITTING|
+|STANDING|
+|LAYING|
 
 Then an independent tidy data frame was created using the aggretate function with the average of each variable for each activity and each subject. As a result of aggregating, new columns were made making some of the old ones unneccessary. The old ones were deleted and the new ones were renamed.
 
@@ -57,6 +59,7 @@ The tidy data frame was written to a file called "tinyData.csv" in the working d
 The identifiers are as follows:
 
 subjectId - the participant number (1-30)
+
 actId - the activity number (1-6)
 
 The vector information contains 81 rows that are compromised of many elements for each measurement. For example "tBodyAcc-mean-X" denotes a measurement of the mean of a person's acceleration along the x axis as calculated using time. Below are the list of parameters that appear in the tidy data set:
