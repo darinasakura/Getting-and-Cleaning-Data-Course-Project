@@ -145,7 +145,7 @@
         colnames(finalData_merge) <- final_data_colNames;
 
 # Export the finalData_merge set 
-        write.table(finalData_merge, './analysis_folder/finalData.txt',row.names=TRUE,sep='\t');
+        write.table(finalData_merge, './analysis_folder/finalData.csv',row.names=TRUE,sep=',');
 
         print("Task 4 complete")
 ##################################################################################
@@ -161,6 +161,6 @@
         tidyData    <- merge(tidyData,activity_labels,by='actId',all.x=TRUE);
 
 # Export the tidyData set 
-        write.table(tidyData, './analysis_folder/tidyData.txt',row.names=TRUE,sep='\t');
+        write.table(tidyData, './analysis_folder/tidyData.csv',row.names=TRUE,sep=',');
 
         print("Task 5 complete")
