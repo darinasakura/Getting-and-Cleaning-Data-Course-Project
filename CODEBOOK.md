@@ -7,9 +7,12 @@ author: "Darin Asakura"
 
 ##Study design
 
-The data was taken from a study conducted by Jorge L. et al. called "Human Activity Recognition Using Smartphones Dataset". There is a paper description at 
+The data was taken from a study conducted by Jorge L. et al. called "Human Activity Recognition Using Smartphones Dataset". There is a paper description at:
+
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones> 
-and all the data is in a zip file at 
+
+and all the data is in a zip file at:
+
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 ##Raw data
