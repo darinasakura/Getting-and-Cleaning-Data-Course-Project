@@ -1,5 +1,7 @@
 # Getting-and-Cleaning-Data-Course-Project
 
+tidyData.txt found in analysis_folder.
+
 For the submission of the course project for the Coursera - Johns Hopkins - Getting and Cleaning Data course.
 
 ##Overview
